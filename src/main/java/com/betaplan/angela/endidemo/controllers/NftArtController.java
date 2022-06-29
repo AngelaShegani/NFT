@@ -2,6 +2,7 @@ package com.betaplan.angela.endidemo.controllers;
 
 import com.betaplan.angela.endidemo.models.Art;
 import com.betaplan.angela.endidemo.services.ArtService;
+import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -20,23 +21,23 @@ public class NftArtController {
 
     @GetMapping("/")
     public String index(Model artModel) {
-        List<Art> arts=artService.getAllArts();
+        List<Art> arts= artService.getAllArts();
         artModel.addAttribute("allArts", arts);
         return "index";
     }
 
     //Add Art(Get/Post)
     @GetMapping("/new")
-    public String newArt(@ModelAttribute("newArt") newArt) {
-        return "new";
+    public String newArt(@ModelAttribute("newArt") Art newArt) {
+        return "newP";
     }
 
     //Create ART
 
     @PostMapping("/create")
-    public String createArt(@Valid @ModelAttribute("newArt")newArt, BindingResult result){
-        if(result.hasErrors()){
-            return "new";
+    public String createArt(@Valid @ModelAttribute("newArt") Art newArt, @NotNull BindingResult results){
+        if(results.hasErrors()){
+            return "newP";
         }
     //go to services to create a new art
         artService.createArt(newArt);
@@ -67,14 +68,14 @@ public class NftArtController {
        // return "rdirect:/";
         //try on the url to put the id,you can delete the item from the url bad practice
 
-    }
+    //}
     @DeleteMapping("/delete/{id}")
-    public String deletaArt(@PathVariable Long id){
+    public String deleteArt(@PathVariable Long id){
         artService.deleteArt(id);
-        return "rdirect:/";
+        return "redirect:/";
 
 
-    }
+    }   
     //Art Details
     @GetMapping("/artDetails/{id}")
     public String artDetails(@PathVariable Long id, Model model) {
@@ -82,4 +83,5 @@ public class NftArtController {
     model.addAttribute("art", art);
     return "details";
 
+    }
 }

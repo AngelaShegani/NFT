@@ -12,7 +12,7 @@
 </head>
 <body>
 <h1>Discover extraordinary NFTs </h1>
-<a href="/new">New Art</a>
+<a href='/new'>New Art</a>
 <table class="table table-dark">
     <table class="table">
         <thead>
@@ -26,15 +26,15 @@
     <tbody>
     <c:forEach items="${allArts}" var="art">
     <tr class="table-primary">
-        <td  class="table-secondary"> <c:out value="${art.title}"/></td>
+            <%-- <td  class="table-secondary"> <c:out value="${art.title}"/></td> --%>
         <td  class="table-secondary"><a href="/artDetails/${art.id}">${art.title}</a> </td>
         <td  class="table-secondary"><c:out value="${art.description}"/></td>
         <td>
             <a href="/edit/${art.id}">Edit</a>
 
-            <form:form action="${art.id}" method="delete">
-                //add button called delete
-            <a href="/delete/${art.id}">Delete</a>
+            <form:form action="/delete/${art.id}" method="delete">
+                <%--add button called delete--%>
+                <button>Delete</button>
             </form:form>
         </td>
     </tr>

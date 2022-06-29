@@ -5,12 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54a99960-b617-4228-9fa5-dcea1493c1b3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/betaplan/angela/endidemo/controllers/NftArtController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/betaplan/angela/endidemo/controllers/NftArtController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/betaplan/angela/endidemo/models/Art.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/betaplan/angela/endidemo/models/Art.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/betaplan/angela/endidemo/services/ArtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/betaplan/angela/endidemo/services/ArtService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/edit.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/new.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/newP.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/betaplan/angela/endidemo/controllers/NftArtController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/betaplan/angela/endidemo/controllers/NftArtController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/betaplan/angela/endidemo/models/Art.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/betaplan/angela/endidemo/models/Art.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/betaplan/angela/endidemo/services/ArtService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/betaplan/angela/endidemo/services/ArtService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,17 +77,22 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "spring.configuration.checksum": "82f179a81e5f245b1823a4096942dd18"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.EndidemoApplication">
+    <configuration name="EndidemoApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="NFT_CRUD" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.betaplan.angela.endidemo.EndidemoApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -89,12 +101,16 @@
       <option name="ACTIVE_PROFILES" />
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <module name="endidemo" />
+      <module name="NFT_CRUD" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.betaplan.angela.endidemo.EndidemoApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.EndidemoApplication" />
+      <item itemvalue="Spring Boot.EndidemoApplication (1)" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -107,10 +123,22 @@
       <workItem from="1656346383838" duration="9000" />
       <workItem from="1656423418026" duration="88000" />
       <workItem from="1656423559647" duration="11838000" />
+      <workItem from="1656494144165" duration="10407000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
